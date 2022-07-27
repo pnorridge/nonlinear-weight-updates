@@ -1,10 +1,10 @@
 # nonlinear-weight-updates
 
-Provides data and implementations (in progress) related to the paper "On the benefits of non-linear weight updates"
+Provides data and implementations (in progress) related to the paper *On the Benefits of Non-Linear Weight Updates* http://arxiv.org/abs/2207.12505
 
 ## Data
 
-Folder deepobs_results_medium_budget includes the search and training data for the key results presented in the paper. This is in the format used in https://github.com/fsschneider/DeepOBS .
+Folder deepobs_results_medium_budget includes the search and training data for the key results presented in the paper. This is in the format used in https://github.com/fsschneider/DeepOBS.
 
 ## Implementations
 
