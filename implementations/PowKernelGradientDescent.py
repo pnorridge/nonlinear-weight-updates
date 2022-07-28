@@ -4,9 +4,6 @@ from select import POLLWRBAND
 import tensorflow as tf
 from tensorflow.keras import optimizers
 
-def signed_sqrt(x):
-    return tf.sign(x)*tf.sqrt(tf.abs(x)) 
-
 def create_signed_pow(p):
   def signed_pow(x):
     return tf.sign(x)*tf.pow(tf.abs(x), p) 

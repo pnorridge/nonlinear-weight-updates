@@ -3,7 +3,7 @@
 
 import tensorflow as tf
 import tensorflow_addons as tfa
-from .PowGradientDescent import PowGradientDescentOptimiser
+from .PowKernelGradientDescent import PowKernelGradientDescentOptimiser
 from tensorflow_addons.optimizers.weight_decay_optimizers import extend_with_decoupled_weight_decay
 
   
