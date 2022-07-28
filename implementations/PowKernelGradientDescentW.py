@@ -8,7 +8,7 @@ from tensorflow_addons.optimizers.weight_decay_optimizers import extend_with_dec
 
   
 PowKernelGradientDescentOptimizerW = extend_with_decoupled_weight_decay(
-    base_optimizer = PowGradientDescentOptimiser) 
+    base_optimizer = PowKernelGradientDescentOptimiser) 
 
 class PowKernelGradientDescentOptimizerW_scaled(PowKernelGradientDescentOptimizerW):
     def __init__(self, learning_rate, weight_decay_opt, **kwargs):
