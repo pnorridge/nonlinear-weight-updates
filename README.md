@@ -6,7 +6,7 @@ Provides data and implementations (in progress) related to the paper *On the Ben
 
 Folder deepobs_results_medium_budget includes the search and training data for the key results presented in the paper. This is in the format used in https://github.com/fsschneider/DeepOBS.
 
-Note that results sets labelled '_noL2' are those explicitly implementing weight decay rather than L2 regularisation. The L2 factor in the test case is set to zero and replaced with weight decay in the optimizer (see paper for discussion).
+Note that results sets labelled '_nodecay' are those explicitly implementing weight decay rather than L2 regularisation. The L2 factor in the test case is set to zero and replaced with weight decay in the optimizer (see paper for discussion). (I know, the naming is poor - and will be fixed...)
 
 ## Implementations
 
