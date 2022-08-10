@@ -2,6 +2,12 @@
 
 Provides data and implementations (in progress) related to the paper *On the Benefits of Non-Linear Weight Updates* http://arxiv.org/abs/2207.12505
 
+Key result in a sentence: You can improve generalisation by applying a non-linear function to gradients before passing them to the optimiser. (A well-chosen function, of course.)
+
+The motivation: If you have correlated inputs to a node, the best weight set is one that balances the contribution from these inputs. This weight set is more robust to noise. So, we pick a function that encourages more balance.
+
+The geometric picture: Correlated inputs are intimately related to flat minima.  But, good performance is not just about finding flat minima, it's also about making sure the model ends up in a good location on this plane.
+
 ## Data
 
 Folder deepobs_results_medium_budget includes the search and training data for the key results presented in the paper. This is in the format used in https://github.com/fsschneider/DeepOBS.
