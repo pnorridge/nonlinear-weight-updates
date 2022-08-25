@@ -100,7 +100,7 @@ class PowKernelGradientDescentOptimiser(optimizers.Optimizer):
     coefficients = ((apply_state or {}).get((var_device, var_dtype))
                     or self._fallback_apply_state(var_device, var_dtype))
 
-    grad = signed_sqrt(grad)
+    grad = self.pow_function(grad)
 
     momentum_var = self.get_slot(var, "momentum")
     return tf.raw_ops.ResourceSparseApplyKerasMomentum(
